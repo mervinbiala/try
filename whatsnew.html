@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us</title>
+	<style>
+	body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2d3a2e; /* Dark background */
+    color: white; /* White text color */
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 800px; /* Adjust width as desired */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.image-section img {
+    max-width: 300px; /* Adjust size as needed */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.text-section {
+    margin-left: 20px; /* Space between image and text */
+}
+
+h1 {
+    font-size: 3em;
+    color: #e63946; /* Red color for heading */
+}
+
+h2 {
+    font-size: 2em;
+    color: #f1faee; /* Light grey for subheading */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.talk-button {
+    background-color: #e63946; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded button */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px; /* Space above button */
+}
+
+.talk-button:hover {
+    background-color: #d62839; /* Darker red on hover */
+}
+@media (max-width: 768px) {
+    .about-us-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+	</style>
+	
+</head>
+<body>
+    <div class="about-us-container">
+        <div class="image-section">
+            <img src="https://scontent.fmnl15-1.fna.fbcdn.net/v/t39.30808-6/494681641_1395657601862251_6776021873482662956_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHash7CBTJ6OMSl476pgiSkOALEPZb5gzU4AsQ9lvmDNf0Y2W1q-tHpc0J6DYdBotxEj4OijOjZJLfKScdqbE3v&_nc_ohc=lq8q11WKeGIQ7kNvwGarcCN&_nc_oc=Adl_j3rcEk_hlCbT_lljfMawa7q27huKesF2P-GmulILbfgeP9XJ8oyfrDOFfsgeVYA&_nc_zt=23&_nc_ht=scontent.fmnl15-1.fna&_nc_gid=EORGm1-LDBxGLvT54bcEOw&oh=00_AfKaRJKizUjVYsURuxbWDdPjxUdRoJf24ShyJ6CcTCi3qw&oe=6823472F" alt="About Us Image">
+        </div>
+        <div class="text-section">
+            <h1>About Us</h1>
+            <h2>Developer & Designer</h2>
+            <p>I am a front-end web developer. I can provide clean code and pixel-perfect design. I also make the website more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+            <button class="talk-button">Home</button>	
+        </div>
+    </div>
+</body>
+</html>

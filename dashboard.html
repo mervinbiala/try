@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       <style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f8f0; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3a2e; 
+    color: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #25332a; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    height: 607px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 136px);
+    gap: 15px;
+    padding: 20px;
+    flex: 1;
+    background: #d9e8d9; 
+}
+
+.box {
+    background-color: #ffffff; /* white boxes */
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+h5, p {
+    margin: 5px 0;
+}
+
+a {
+    color: #4caf50; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #388e3c; 
+}
+
+.box .img {
+    height: 134px;
+    width: 400px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjusts based on content */
+    }
+
+    .main-content {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout for mobile */
+        grid-template-rows: auto; /* Adjusts rows automatically */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .box {
+        width: 100%; /* Full width for boxes */
+        margin: 10px 0; /* Adds margin between boxes */
+    }
+}
+
+</style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="biala.html"><h1>Mervin's Song playlist</h1></a>
+        <nav>
+          
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img class="pic" src="img1.png" alt="Profile Picture" />
+                <div>
+                    <h5>Mervin Marco C. Biala</h5>
+                    <p>Email: Marcobiala@gmail.com</p>
+                </div>
+            </div>
+            <div class="middle-side">
+                <h2>About Me:</h2>
+                <p>Facebook: <a href="https://www.facebook.com/mervin.marco.biala" target="_blank">Click!</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/mervin.marco.biala" target="_blank">Click!</a></p>
+                <p>Phone: 09271266491</p>
+                <p>Sex: Male</p>
+                <p>Explore Another Page: <a href="https://www.example.com" target="_blank">Click!</a></p>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="box"><a href="https://www.youtube.com/watch?v=Rht8rS4cR1s"><img class="img" src="multo.png"></a></div>
+            <div class="box"><a href="https://www.youtube.com/watch?v=oiAtAzFLDfE"><img class="img" src="tibok.png"></a></div>
+            <div class="box"><a href="https://www.youtube.com/watch?v=Svm0vY91oN0"><img class="img" src="misteryoso.png"></a></div>
+			<div class="box"><a href="https://www.youtube.com/watch?v=1AAyuUbzDuY"><img class="img" src="bawat.png"></a></div>
+			<div class="box"><a href="https://www.youtube.com/watch?v=Ohf3czrhCSY"><img class="img" src="ere.png"></a></div>
+            <div class="box"><a href="https://www.youtube.com/watch?v=TIBFF9AUWX4"><img class="img" src="pahin.png"></a></div>
+        </main>
+    </div>
+</body>
+</html>	

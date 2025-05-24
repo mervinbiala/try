@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending OPM Playlist</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+	body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #2d3a2e;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1e261e;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #a8e6a2;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #d2f5c9;
+}
+
+.playlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.song-card {
+    background-color: #3b4b3e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.song-card:hover {
+    transform: scale(1.02);
+}
+
+.song-card h2 {
+    margin-top: 0;
+    color: #b8ffbc;
+}
+
+.song-card p {
+    color: #d9f5d0;
+    margin: 10px 0;
+}
+
+.song-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2d3a2e;
+    background-color: #a8e6a2;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.song-card a:hover {
+    background-color: #91d291;
+}
+
+	</style>
+	
+</head>
+<body>
+    <header>
+        <h1>Trending OPM Playlist</h1>
+        <p>Discover the hottest OPM tracks and their artists</p>
+    </header>
+
+    <main class="playlist-container">
+        <div class="song-card">
+            <h2>Pano</h2>
+            <p>by Zack Tabudlo</p>
+            <a href="https://www.youtube.com/watch?v=EjAbgQVJzN0" target="_blank">Listen</a>
+        </div>
+        <div class="song-card">
+            <h2>Pasilyo</h2>
+            <p>by SunKissed Lola</p>
+            <a href="https://www.youtube.com/watch?v=CxKmwkbtDT0" target="_blank">Listen</a>
+        </div>
+        <div class="song-card">
+            <h2>Mundo</h2>
+            <p>by IV of Spades</p>
+            <a href="https://www.youtube.com/watch?v=rgqRM1OEkyU" target="_blank">Listen</a>
+        </div>
+        <div class="song-card">
+            <h2>Ikaw Lang</h2>
+            <p>by Nobita</p>
+            <a href="https://www.youtube.com/watch?v=QxZlq39z8mY" target="_blank">Listen</a>
+        </div>
+        <div class="song-card">
+            <h2>Kumpas</h2>
+            <p>by Moira Dela Torre</p>
+            <a href="https://www.youtube.com/watch?v=63GRQ-cQbpA" target="_blank">Listen</a>
+        </div>
+    </main>
+</body>
+</html>

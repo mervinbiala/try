@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4x4 Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: #2d3a2e;
+      color: #ffffff;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .gallery img,
+    .gallery video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    video {
+      background-color: #000;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>GALLERY</h1>
+
+  <div class="gallery">
+    <!-- Images -->
+    <img src="https://www.coca-cola.com/content/dam/onexp/global/central/offerings/coke-studio/artists/Zack_Tabudlo_Coke_Studio_16-9.png" alt="Image 1">
+    <img src="https://billboardphilippines.com/wp-content/uploads/2023/10/Featured-Image-Juan-Karlos.jpg" alt="Image 2">
+    <img src="https://cdn.filestackcontent.com/lyYqRBMYSycMnBGonsng" alt="Image 3">
+    <img src="https://billboardphilippines.com/wp-content/uploads/2023/12/HELLMERRY-SONY-FTR-IMG.jpg" alt="Image 4">
+
+    <!-- Videos -->
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <video controls>
+      <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+    </video>
+    <video controls>
+      <source src="https://samplelib.com/lib/preview/mp4/sample-10s.mp4" type="video/mp4">
+    </video>
+    <video controls>
+      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</body>
+</html>
