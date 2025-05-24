@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mervin's Website with Responsive Design</title>
+    <style>
+       /* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #d9e8d9;
+}
+
+header {
+    background: #2d3a2e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #d9e8d9;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer {
+    background: #2d3a2e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 600px;
+    box-sizing: border-box;
+}
+
+.about-us {
+    background: #2d3a2e;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+
+/* Articles */
+article {
+    margin-bottom: 15px;
+}
+
+/* Positioning Boxes */
+.box {
+    background: #027333;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    flex: 1 1 100%;
+}
+
+.fixed-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #0A5DA6;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background: #222059;
+    padding: 10px;
+    color: white;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: #F2E527;
+    padding: 10px;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    section,
+    .about-us {
+        flex: 1 1 100%;
+        margin: 0;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HI, THIS IS MERVIN'S WEBSITE</h1>
+        <p>TRY TO EXPLORE THE WEBSITE AND ENJOY!</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contactus.html">Contact</a>
+        <a href="whatsnew.html">About</a>
+        <a href="gallery.html">Gallery</a>
+		<a href="myplaylist.html">My Playlist</a>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>NEW TRENDING SONGS</h2>
+            <article>
+                <h3>Pahintulot</h3>
+                <p>"Pahintulot" is a poignant track by the Filipino band Shirebound and Busking, featured on their album "For Princesses, By Thieves" released in 2021.</p>
+                <a href="https://www.youtube.com/watch?v=xizg1-0JmiA">TAP TO HEAR</a>
+            </article>
+            <article>
+                <h3>Waltz of Four Left Feet</h3>
+                <p>"Waltz of Four Left Feet" captures the essence of unrequited love and longing.</p>
+                <a href="https://www.youtube.com/watch?v=SccFEzGkhq8&list=RD0g7aHsV_zzs&index=3">TAP TO HEAR</a>
+            </article>
+        </section>
+
+        <section class="about-us">
+            <h2>What's new</h2>
+            <p>Developer & Designer</p>
+            <p>This website is for the trending artist in the philipines. try to explore it. I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Exploring Web Design - See yah!</p>
+    </footer>
+</body>
+</html>
